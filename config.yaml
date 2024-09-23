@@ -1,5 +1,5 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)", Installing Homebrew]
+  - [NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)", Installing Homebrew]
   - [brew bundle, Installing application & libraries]
   - [sh bin/dock]
