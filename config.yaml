@@ -1,17 +1,17 @@
 - shell:
-  - [git pull, Updating repository]
-  - [git submodule update --init --recursive, Updating submodules]
+    - [git pull, Updating repository]
+    - [git submodule update --init --recursive, Updating submodules]
 
-- clean: ['~']
+- clean: ["~"]
 
 - defaults:
     link:
-      create: true
-      relink: true
+        create: true
+        relink: true
 
 - link:
-  ~/.bash_profile: shell/bash/.bash_profile
-  ~/.bashrc: shell/bash/.bashrc
+    ~/.bash_profile: ./shell/bash/.bash_profile
+    ~/.bashrc: ./shell/bash/.bashrc
 
 # - shell:
 #   - [NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)", Installing Homebrew]
