@@ -2,8 +2,11 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
-brew "dockutil"
+
+brew "bash"
 brew "starship"
+
+cask "arc"
 cask "font-fira-code-nerd-font"
 cask "font-fira-mono-nerd-font"
 cask "visual-studio-code"

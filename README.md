@@ -5,7 +5,7 @@ Personal dotfiles.
 ## Bootstrap
 
 ```bash
-curl -L raw.githubusercontent.com/alessio-libardi/dotfiles/main/bin/bootstrap.sh | bash
+bash -c "$(curl -fsSL raw.githubusercontent.com/alessio-libardi/dotfiles/main/bin/bootstrap.sh)"
 ```
 
 ## Update
