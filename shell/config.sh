@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-bash ./shell/config.sh
+bash ./shell/bash/config.sh
