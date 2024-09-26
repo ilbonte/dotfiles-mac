@@ -14,5 +14,13 @@
       ~/.bashrc: ./shell/bash/.bashrc
 
 - shell:
-      - [bash os/config.sh, Configure OS]
-      - [bash shell/config.sh, Configure shell]
+      - description: Configure OS
+        command: bash os/config.sh
+        stdin: true
+        stdout: true
+        stderr: true
+      - description: Configure shell
+        command: bash shell/config.sh
+        stdin: true
+        stdout: true
+        stderr: true
