@@ -12,6 +12,7 @@
 - link:
       ~/.bash_profile: ./shell/bash/.bash_profile
       ~/.bashrc: ./shell/bash/.bashrc
+      ~/.config/starship.toml: ./shell/bash/starship.toml
 
 - shell:
       - description: Configure OS
