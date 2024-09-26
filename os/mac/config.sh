@@ -2,7 +2,7 @@
 
 echo "Configuring MacOS..."
 
-if ! type "brew" >/dev/null; then
+if ! command -v brew 2>&1 >/dev/null; then
   echo "Installing Homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
