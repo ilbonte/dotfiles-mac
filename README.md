@@ -2,9 +2,14 @@
 
 Personal dotfiles.
 
-## Quick Start
+## Bootstrap
 
 ```bash
-git clone git@github.com:alessio-libardi/dotfiles.git --recursive ~/.config/dotfiles
-cd ~/.config/dotfiles && sh bin/install
+curl -L raw.githubusercontent.com/alessio-libardi/dotfiles/main/bin/bootstrap.sh | sh
+```
+
+## Update
+    
+```bash
+update
 ```
