@@ -2,7 +2,7 @@
 
 echo "Configuring shell..."
 
-NEW_SHELL="/usr/local/bin/bash"
+NEW_SHELL="/opt/homebrew/bin/bash"
 
 # Check if the new shell is already in /etc/shells
 if ! grep -Fxq "$NEW_SHELL" /etc/shells; then
