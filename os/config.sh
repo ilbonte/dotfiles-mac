@@ -5,7 +5,7 @@ echo "Detecting OS..."
 case "$(uname)" in
 "Darwin")
   echo "Detected MacOS!"
-  bash ./mac/config.sh
+  bash ./os/mac/config.sh
   ;;
 *)
   echo "Unsupported OS configuration!"
