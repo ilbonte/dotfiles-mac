@@ -10,6 +10,6 @@ grep -qxF "$SHELL_PATH" /etc/shells || echo "$SHELL_PATH" | sudo tee -a /etc/she
 echo "Changing default shell to $SHELL_PATH"
 chsh -s "$SHELL_PATH"
 
-if [ "$(ps -p $$ -o 'comm=')" != "bash" ]; then exec bash; fi
+if [ "$(ps -p $$ -o 'comm=')" != "bash" ]; then exec "$SHELL_PATH"; fi
 
 echo "Shell configured!"
