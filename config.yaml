@@ -3,6 +3,7 @@
 - defaults:
       link:
           create: true
+          force: true
           relink: true
 
 - link:

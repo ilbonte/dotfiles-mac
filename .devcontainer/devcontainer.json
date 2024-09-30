@@ -11,5 +11,5 @@
       ]
     }
   },
-  "postCreateCommand": "sudo apk add shellcheck && sudo apk add shfmt"
+  "onCreateCommand": "sudo apk add ruby && sudo apk add shellcheck && sudo apk add shfmt"
 }
