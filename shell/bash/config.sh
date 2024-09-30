@@ -23,6 +23,6 @@ brewser=$(stat -f "%Su" $(which brew))
 alias brew='sudo -Hu '$brewser' brew'
 
 echo "Configuring applications & libraries..."
-brew bundle --file=./shell/mac/Brewfile
+brew bundle --file=./shell/bash/Brewfile
 
 echo "Shell configured!"
