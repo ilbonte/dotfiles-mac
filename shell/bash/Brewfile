@@ -1,0 +1,5 @@
+tap "homebrew/core"
+tap "homebrew/services"
+
+brew "bash"
+brew "starship"

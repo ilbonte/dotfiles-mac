@@ -1,7 +1,3 @@
-- shell:
-      - [git pull, Update repository]
-      - [git submodule update --init --recursive, Update submodules]
-
 - clean: ["~"]
 
 - defaults:

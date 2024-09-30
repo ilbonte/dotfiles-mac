@@ -1,13 +1,9 @@
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/core"
-tap "homebrew/services"
-
-brew "bash"
-brew "starship"
 
 cask "arc"
 cask "font-fira-code-nerd-font"
 cask "font-fira-mono-nerd-font"
+cask "lookaway"
 cask "raycast"
 cask "visual-studio-code"
