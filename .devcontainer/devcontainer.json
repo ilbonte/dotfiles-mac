@@ -1,6 +1,9 @@
 {
-  "name": "Alpine",
-  "image": "mcr.microsoft.com/devcontainers/base:alpine-3.20",
+  "name": "Default Linux Universal",
+  "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+  "features": {
+    "ghcr.io/devcontainers/features/ruby:1": {}
+  },
   "customizations": {
     "vscode": {
       "extensions": [
