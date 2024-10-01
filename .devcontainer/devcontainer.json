@@ -14,5 +14,5 @@
       ]
     }
   },
-  "postCreateCommand": "curl -sS https://webi.sh/shfmt | sh"
+  "postCreateCommand": "sudo apt-get install shellcheck shfmt"
 }
