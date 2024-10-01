@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 echo "Installing package manager..."
-if ! command -v brew 2>&1 >/dev/null; then
+IS_PACKAGE_MANAGER_INSTALLED=$(command -v brew 2>&1 >/dev/null)
+if ! IS_PACKAGE_MANAGER_INSTALLED; then
   NONINTERACTIVE=1 bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
@@ -9,9 +10,17 @@ echo "Detecting OS..."
 
 case $(uname -s) in
 Darwin)
+  if ! IS_PACKAGE_MANAGER_INSTALLED; then
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>~/.bashrc
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+  fi
   bash ./os/mac/config.sh
   ;;
 Linux)
+  if ! IS_PACKAGE_MANAGER_INSTALLED; then
+    echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >>~/.bashrc
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+  fi
   bash ./os/linux/config.sh
   ;;
 *)
