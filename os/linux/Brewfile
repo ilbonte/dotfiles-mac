@@ -1,5 +1,5 @@
 tap "homebrew/linux-fonts"
 
 brew "fontconfig"
-brew "font-fira-code-nerd-font"
+# brew "font-fira-code-nerd-font"
 
