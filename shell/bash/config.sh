@@ -16,4 +16,7 @@ brew bundle --file=./shell/bash/Brewfile
 #   exec "$SHELL_PATH"
 # fi
 
+echo 'eval "$(starship init bash)"' >>~/.bashrc
+
+
 echo "Shell configured!"
