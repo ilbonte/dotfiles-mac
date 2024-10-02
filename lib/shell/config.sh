@@ -5,7 +5,7 @@ source ~/.bashrc
 echo "Configuring shell..."
 
 echo "Configuring libraries..."
-brew bundle --file=./shell/bash/Brewfile
+brew bundle --file=./lib/shell/Brewfile
 
 # Define the shell path
 # SHELL_PATH="/opt/homebrew/bin/bash"

@@ -3,4 +3,4 @@
 echo "Configuring MacOS..."
 
 echo "Configuring applications..."
-brew bundle --file=./os/mac/Brewfile
+brew bundle --file=./lib/os/mac/Brewfile
