@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source ~/.bashrc
+
 echo "Configuring shell..."
 
 echo "Configuring libraries..."
