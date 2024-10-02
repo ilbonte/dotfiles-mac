@@ -1,25 +1,26 @@
 - clean: ["~"]
 
 - defaults:
-      link:
-          create: true
-          force: true
-          relink: true
+          link:
+                  create: true
+                  force: true
+                  relink: true
 
 - link:
-      ~/.fonts.conf: ./fonts/.fonts.conf
-      ~/.bash_profile: ./shell/bash/.bash_profile
-      ~/.bashrc: ./shell/bash/.bashrc
-      ~/.config/starship.toml: ./shell/bash/starship.toml
+          ~/.bash_profile: ./config/.bash_profile
+          ~/.bashrc: ./config/.bashrc
+          ~/.config/starship.toml: ./config/starship.toml
+          ~/.vim/autoload/plug.vim: ./lib/vim-plug/plug.vim
+          ~/.vimrc: ./config/.vimrc
 
 - shell:
-      - description: Configure OS
-        command: bash os/config.sh
-        stdin: true
-        stdout: true
-        stderr: true
-      - description: Configure shell
-        command: bash shell/config.sh
-        stdin: true
-        stdout: true
-        stderr: true
+          - description: Configure OS
+            command: bash os/config.sh
+            stdin: true
+            stdout: true
+            stderr: true
+          - description: Configure shell
+            command: bash shell/config.sh
+            stdin: true
+            stdout: true
+            stderr: true
