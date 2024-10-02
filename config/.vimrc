@@ -2,9 +2,9 @@
 call plug#begin()
 
 " List your plugins here
-Plug 'tpope/vim-sensible'
+// Plug 'tpope/vim-sensible'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
-Plug 'itchyny/lightline.vim'
+// Plug 'itchyny/lightline.vim'
 
 call plug#end()
 " End vim-plug section
