@@ -2,9 +2,7 @@
 call plug#begin()
 
 " List your plugins here
-Plug 'tpope/vim-sensible'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
-Plug 'itchyny/lightline.vim'
 
 call plug#end()
 " End vim-plug section
@@ -18,7 +16,6 @@ autocmd VimEnter *
 " Set the colorscheme
 set termguicolors
 colorscheme catppuccin_latte
-let g:lightline = {'colorscheme': 'catppuccin_latte'}
 
 " Set the statusline
 set noshowmode
