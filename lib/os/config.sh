@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
+# shellcheck source=lib/shell/config/.bashrc
 source ~/.bashrc
-echo "Installing package manager..."
+
 if ! command -v brew &>/dev/null; then
+  echo "Installing package manager..."
   NONINTERACTIVE=1 bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
