@@ -12,6 +12,7 @@
           ~/.config/starship.toml: ./config/starship.toml
           ~/.vim/autoload/plug.vim: ./lib/vim-plug/plug.vim
           ~/.vimrc: ./config/.vimrc
+          ~/.tmux.conf: ./config/.tmux.conf
 
 - shell:
           - description: Configure OS
