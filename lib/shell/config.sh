@@ -3,7 +3,7 @@
 echo "Configuring libraries..."
 brew bundle --file=./lib/shell/Brewfile
 
-if ! command -v starship &>/dev/null; then
+if ! grep -qxF 'eval "$(starship init bash)"' ~/.bashrc; then
   echo 'eval "$(starship init bash)"' >>~/.bashrc
 fi
 
