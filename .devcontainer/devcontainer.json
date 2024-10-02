@@ -14,5 +14,5 @@
       ]
     }
   },
-  "postCreateCommand": "sudo apt install shellcheck shfmt"
+  "postCreateCommand": "sudo apt update && sudo apt install shellcheck shfmt"
 }
