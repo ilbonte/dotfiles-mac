@@ -7,12 +7,12 @@
       relink: true
 
 - link:
-    ~/.bash_profile: ./config/.bash_profile
-    ~/.bashrc: ./config/.bashrc
-    ~/.config/starship.toml: ./config/starship.toml
+    ~/.bash_profile: ./lib/shell/config/.bash_profile
+    ~/.bashrc: ./lib/shell/config/.bashrc
+    ~/.config/starship.toml: ./lib/shell/config/starship.toml
     ~/.vim/autoload/plug.vim: ./packages/vim-plug/plug.vim
-    ~/.vimrc: ./config/.vimrc
-    ~/.tmux.conf: ./config/.tmux.conf
+    ~/.vimrc: ./lib/shell/config/.vimrc
+    ~/.tmux.conf: ./lib/shell/config/.tmux.conf
 
 - shell:
     - description: Configure OS
