@@ -13,6 +13,7 @@
     ~/.vim/autoload/plug.vim: ./packages/vim-plug/plug.vim
     ~/.vimrc: ./lib/shell/config/.vimrc
     ~/.tmux.conf: ./lib/shell/config/.tmux.conf
+    ~/.gitconfig: ./lib/shell/config/.gitconfig
 
 - shell:
     - description: Configure OS
