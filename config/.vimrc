@@ -14,7 +14,7 @@ autocmd VimEnter *
   \|   PlugInstall --sync | q
   \| endif
 
-let g:colorscheme catppuccin_latte
+colorscheme catppuccin_mocha
 let g:lightline = {'colorscheme': 'catppuccin_latte'}
 set noshowmode
 set laststatus=2
