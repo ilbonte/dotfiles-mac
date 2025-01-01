@@ -13,8 +13,6 @@ if [ "$(uname)" == "Darwin" ]; then
     dockutil --no-restart --add "/Applications/Utilities/Terminal.app"
     dockutil --no-restart --add "/Applications/Visual Studio Code.app"
 
-    dockutil --add '' --type spacer --section apps --after "Visual Studio Code"
-
     killall Dock
 
     echo "Success! Dock is set."

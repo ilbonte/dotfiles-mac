@@ -7,16 +7,28 @@
           relink: true
 
 - link:
-      ~/.bash_profile: ./lib/shell/config/.bash_profile
-      ~/.bashrc: ./lib/shell/config/.bashrc
-      ~/.config/starship.toml: ./lib/shell/config/starship.toml
+      ~/.bash_aliases: ./lib/shell/bash/.bash_aliases
+      ~/.bash_env: ./lib/shell/bash/.bash_env
+      ~/.bash_functions: ./lib/shell/bash/.bash_functions
+      ~/.bash_profile: ./lib/shell/bash/.bash_profile
+      ~/.bash_extra: ./lib/shell/bash/.bash_extra
+      ~/.bashrc: ./lib/shell/bash/.bashrc
+
+- link:
+      ~/.gitconfig: ./lib/shell/git/.gitconfig
+
+- link:
       ~/.vim/autoload/plug.vim: ./packages/vim-plug/plug.vim
-      ~/.vimrc: ./lib/shell/config/.vimrc
-      ~/.tmux.conf: ./lib/shell/config/.tmux.conf
-      ~/.gitconfig: ./lib/shell/config/.gitconfig
+      ~/.tmux.conf: ./lib/shell/prompt/.tmux.conf
+      ~/.vimrc: ./lib/shell/prompt/.vimrc
+      ~/.config/starship.toml: ./lib/shell/prompt/starship.toml
+
+- link:
+      ~/.ssh/config: ./lib/shell/ssh/config
+      ~/.ssh/known_hosts: ./lib/shell/ssh/known_hosts
 
 - shell:
-      - description: Configure package Manager
+      - description: Configure package manager
         command: bash --login lib/core/config.sh
         stdin: true
         stdout: true

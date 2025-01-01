@@ -1,8 +1,8 @@
 {
-  "name": "Debian",
-  "image": "mcr.microsoft.com/vscode/devcontainers/base",
+  "name": "Ubuntu",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
-    "ghcr.io/devcontainers/features/python:1.6.4": {}
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
   "customizations": {
     "vscode": {
@@ -10,7 +10,8 @@
         "EditorConfig.EditorConfig",
         "GitHub.copilot",
         "redhat.vscode-yaml",
-        "mads-hartmann.bash-ide-vscode"
+        "mads-hartmann.bash-ide-vscode",
+        "tamasfe.even-better-toml"
       ]
     }
   },
