@@ -2,10 +2,8 @@
 
 echo "Configuring libraries..."
 brew bundle --file=./lib/shell/Brewfile
-if [ "$(ps -p $$ -o 'comm=')" != "bash" ]; then
-  echo "yo"
-fi
 
+SHELL_PATH="/opt/homebrew/bin/bash"
 if [ "$SHELL" != "$SHELL_PATH" ]; then
   grep -qxF "$SHELL_PATH" /etc/shells || echo "$SHELL_PATH" | sudo tee -a /etc/shells
   sudo chsh -s "$SHELL_PATH"
