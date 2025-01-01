@@ -6,7 +6,7 @@ brew bundle --file=./lib/shell/Brewfile
 SHELL_PATH="/opt/homebrew/bin/bash"
 if [ "$SHELL" != "$SHELL_PATH" ]; then
   grep -qxF "$SHELL_PATH" /etc/shells || echo "$SHELL_PATH" | sudo tee -a /etc/shells
-  sudo chsh -s "$SHELL_PATH"
+  chsh -s "$SHELL_PATH"
   exec "$SHELL_PATH"
 fi
 
