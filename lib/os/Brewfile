@@ -2,6 +2,7 @@ brew "dockutil"
 
 cask "android-studio", greedy: true
 cask "arc", greedy: true
+cask "docker", greedy: true
 cask "font-fira-code-nerd-font", greedy: true
 cask "keycastr", greedy: true
 cask "kitty", greedy: true
