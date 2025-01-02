@@ -18,4 +18,9 @@ if [ -n "$SSH_PRIVATE_KEY" ] && [ -n "$SSH_PUBLIC_KEY" ]; then
   chmod 644 ~/.ssh/key.pub
 fi
 
+# if xcodebuild command available accept license
+if command -v xcodebuild >/dev/null; then
+  sudo xcodebuild -license accept
+fi
+
 echo "Shell configured!"
