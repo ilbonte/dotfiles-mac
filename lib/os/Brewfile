@@ -4,6 +4,7 @@ cask "android-studio", greedy: true
 cask "arc", greedy: true
 cask "font-fira-code-nerd-font", greedy: true
 cask "keycastr", greedy: true
+cask "kitty", greedy: true
 cask "raycast", greedy: true
 cask "stretchly", greedy: true
 cask "visual-studio-code", greedy: true

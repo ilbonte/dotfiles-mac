@@ -10,7 +10,7 @@ if [ "$(uname)" == "Darwin" ]; then
     dockutil --add '' --type small-spacer --section apps --before Arc
 
     dockutil --no-restart --add "/Applications/Arc.app"
-    dockutil --no-restart --add "/Applications/Utilities/Terminal.app"
+    dockutil --no-restart --add "/Applications/Kitty.app"
     dockutil --no-restart --add "/Applications/Visual Studio Code.app"
 
     killall Dock
