@@ -2,8 +2,6 @@ brew "dockutil"
 brew "cocoapods"
 
 cask "android-studio", greedy: true
-cask "android-platform-tools", greedy: true
-cask "android-commandlinetools", greedy: true
 cask "arc", greedy: true
 cask "docker", greedy: true
 cask "flutter", greedy: true
