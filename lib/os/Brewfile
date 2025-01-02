@@ -10,3 +10,5 @@ cask "kitty", greedy: true
 cask "raycast", greedy: true
 cask "stretchly", greedy: true
 cask "visual-studio-code", greedy: true
+
+mas "XCode", id: 497799835
