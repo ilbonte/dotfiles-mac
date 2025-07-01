@@ -2,8 +2,8 @@
 
 set -e
 
-GITHUB_USER="alessio-libardi"
-GITHUB_REPO="dotfiles"
+GITHUB_USER="ilbonte"
+GITHUB_REPO="dotfiles-mac"
 
 BASEDIR="${HOME}/.config/${GITHUB_REPO}"
 

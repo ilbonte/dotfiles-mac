@@ -1,18 +1,12 @@
 [user]
-	name = Alessio Libardi
-	email = 58233289+alessio-libardi@users.noreply.github.com
+	name = Davide Bontempelli
+	email = davide.bonte@gmail.com
 
 [init]
 	defaultBranch = main
 
 [core]
-	editor = code --wait
-
-[diff]
-	tool = code --wait --diff $LOCAL $REMOTE
+	editor = vim
 
 [push]
 	autoSetupRemote = true
-
-[alias]
-  main = !bash -c 'source $HOME/.bash_functions && git_main'

@@ -7,9 +7,9 @@ if [ "$(uname)" == "Darwin" ]; then
     dockutil --no-restart --remove all
     dockutil --no-restart --add "/Applications/Launchpad.app"
 
-    dockutil --add '' --type small-spacer --section apps --before Arc
+    dockutil --add '' --type small-spacer --section apps --before "Google Chrome"
 
-    dockutil --no-restart --add "/Applications/Arc.app"
+    dockutil --no-restart --add "/Applications/Google Chrome.app"
     dockutil --no-restart --add "/Applications/Kitty.app"
     dockutil --no-restart --add "/Applications/Visual Studio Code.app"
 

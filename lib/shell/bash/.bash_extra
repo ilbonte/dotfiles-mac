@@ -29,3 +29,4 @@ fi
 if command -v kitty &>/dev/null; then
   kitty +kitten themes --reload-in=all Catppuccin-Latte
 fi
+eval "$(zoxide init bash)"
