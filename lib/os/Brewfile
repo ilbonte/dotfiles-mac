@@ -12,5 +12,7 @@ cask "font-fira-code-nerd-font", greedy: true
 cask "kitty", greedy: true
 cask "raycast", greedy: true
 cask "visual-studio-code", greedy: true
+cask "telegram-desktop", greedy: true
+
 
 mas "XCode", id: 497799835
