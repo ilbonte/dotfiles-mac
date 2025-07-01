@@ -7,12 +7,11 @@
           relink: true
 
 - link:
-      ~/.bash_aliases: ./lib/shell/bash/.bash_aliases
-      ~/.bash_env: ./lib/shell/bash/.bash_env
-      ~/.bash_functions: ./lib/shell/bash/.bash_functions
-      ~/.bash_profile: ./lib/shell/bash/.bash_profile
-      ~/.bash_extra: ./lib/shell/bash/.bash_extra
-      ~/.bashrc: ./lib/shell/bash/.bashrc
+      ~/.zsh_aliases: ./lib/shell/zsh/.zsh_aliases
+      ~/.zsh_env:     ./lib/shell/zsh/.zsh_env
+      ~/.zsh_functions: ./lib/shell/zsh/.zsh_functions
+      ~/.zsh_extra:     ./lib/shell/zsh/.zsh_extra
+      ~/.zshrc:      ./lib/shell/zsh/.zshrc
 
 - link:
       ~/.gitconfig: ./lib/shell/git/.gitconfig

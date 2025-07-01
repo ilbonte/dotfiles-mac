@@ -1,0 +1,22 @@
+# Homebrew on macOS Apple Silicon
+if [[ "$(uname)" == "Darwin" ]]; then
+  BREW_PATH="/opt/homebrew/bin/brew"
+  if [ -f "$BREW_PATH" ]; then
+    eval "$($BREW_PATH shellenv)"
+  fi
+fi
+
+# Load keychain if available
+if command -v keychain &>/dev/null && [ -f ~/.ssh/key ]; then
+  eval "$(keychain --quiet --eval --agents ssh key)"
+fi
+
+# Starship prompt
+if command -v starship &>/dev/null; then
+  eval "$(starship init zsh)"
+fi
+
+# zoxide directory jumper
+if command -v zoxide &>/dev/null; then
+  eval "$(zoxide init zsh)"
+fi

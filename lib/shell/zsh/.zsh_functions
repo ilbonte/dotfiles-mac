@@ -1,0 +1,13 @@
+# Switch to git main branch and pull latest
+git_main() {
+  git checkout main && git pull
+}
+
+# Enter a running Docker container
+denter() {
+  if [ -z "$1" ]; then
+    echo "Usage: denter <container>"
+  else
+    docker exec -it "$1" /bin/bash
+  fi
+}

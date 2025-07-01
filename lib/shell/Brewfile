@@ -1,4 +1,3 @@
-brew "bash"
 brew "bat"
 brew "gh"
 brew "keychain"

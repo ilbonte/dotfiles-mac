@@ -1,0 +1,6 @@
+export ROOT=/
+export HOME=$HOME
+
+export DOTFILES=$HOME/.config/dotfiles
+export EDITOR="vim"
+
