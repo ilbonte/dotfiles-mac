@@ -3,11 +3,12 @@
 echo "Configuring libraries..."
 brew bundle --file=./lib/shell/Brewfile
 
-SHELL_PATH="/opt/homebrew/bin/bash"
-if [ "$SHELL" != "$SHELL_PATH" ]; then
-  grep -qxF "$SHELL_PATH" /etc/shells || echo "$SHELL_PATH" | sudo tee -a /etc/shells
-  chsh -s "$SHELL_PATH"
-  exec "$SHELL_PATH"
+ZSH_PATH="$(brew --prefix)/bin/zsh"
+if [ "$SHELL" != "$ZSH_PATH" ]; then
+  # add zsh to /etc/shells if needed
+  grep -qxF "$ZSH_PATH" /etc/shells || echo "$ZSH_PATH" | sudo tee -a /etc/shells
+  chsh -s "$ZSH_PATH"
+  exec "$ZSH_PATH" -l
 fi
 
 if [ -n "$SSH_PRIVATE_KEY" ] && [ -n "$SSH_PUBLIC_KEY" ]; then
