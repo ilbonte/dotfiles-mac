@@ -80,7 +80,7 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 # Keep folders on top, disable extension-change warning
-defaults write com.apple.finderix suy _FXSortFoldersFirst -bool true
+defaults write com.apple.finder FXSortFoldersFirst -bool true
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 # Avoid .DS_Store on network/USB volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true

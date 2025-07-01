@@ -1,5 +1,6 @@
 brew "dockutil"
 brew "cocoapods"
+brew "mas"
 
 cask "android-studio", greedy: true
 cask "intellij-idea", greedy: true
